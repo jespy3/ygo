@@ -20,3 +20,5 @@
 ```
   docker push 365091202577.dkr.ecr.ap-southeast-2.amazonaws.com/ygo:latest
 ```
+
+This will all be automated soon.
