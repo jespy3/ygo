@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Welcome to the YGO classifier! PLEASE SHOW ME THE NEW CHANGE
+          Welcome to the YGO classifier! Site under construction.
         </p>
         <a
           className="App-link"
