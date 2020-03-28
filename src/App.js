@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 import Basic from './components/basic';
+import ReferenceLine from './components/referenceLine';
 
 function App() {
   return (
@@ -13,14 +14,7 @@ function App() {
           Welcome to the YGO classifier! Site under construction.
         </p>
         <Basic></Basic>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <ReferenceLine />
       </header>
     </div>
   );
