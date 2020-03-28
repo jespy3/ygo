@@ -2,6 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import Basic from './components/basic';
+
 function App() {
   return (
     <div className="App">
@@ -10,6 +12,7 @@ function App() {
         <p>
           Welcome to the YGO classifier! Site under construction.
         </p>
+        <Basic></Basic>
         <a
           className="App-link"
           href="https://reactjs.org"
