@@ -1,19 +1,19 @@
 import React from 'react';
 
 const user = {
-  firstName: 'wandering',
-  lastName: 'traveller',
+  firstName: 'Wandering Traveller',
+  lastName: 'The Internet',
 };
 const name = formatName(user);
 const element = (
   <p>
-    Hello, {name}! How are you?
+    How are you, {name}?
   </p>
 );
 
 
 function formatName() {
-  return user.firstName + ' ' + user.lastName;
+  return user.firstName + ' of ' + user.lastName;
 }
 
 function Basic() {
