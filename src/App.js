@@ -13,8 +13,8 @@ function App() {
         <p>
           Welcome to the YGO classifier! This site under construction.
         </p>
-        <Basic></Basic>
-        <ReferenceLine />
+        <Basic/>
+        <ReferenceLine/>
       </header>
     </div>
   );
