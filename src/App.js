@@ -11,7 +11,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Welcome to the YGO classifier! Site under construction.
+          Welcome to the YGO classifier! This site under construction.
         </p>
         <Basic></Basic>
         <ReferenceLine />
