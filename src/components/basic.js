@@ -11,6 +11,12 @@ const element = (
       How are you, {name}?
     </p>
     <Normal day="Sunday"/>
+    <Normal day="Monday"/>
+    <Normal day="Tuesday"/>
+    <Normal day="Wednesday"/>
+    <Normal day="Thursday"/>
+    <Normal day="Friday"/>
+    <Normal day="Saturday"/>
   </div>
 );
 
@@ -20,7 +26,7 @@ function formatName() {
 }
 
 function Normal(props) {
-  return <p>It is {props.day} today.</p>;
+  return <p>{props.day} is a day of the week.</p>;
 }
 
 function Basic() {
