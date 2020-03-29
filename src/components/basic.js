@@ -18,6 +18,8 @@ const learnings = [
   'all react components must not modify their prop inputs - they should be read-only. This is just a \'rule\' and I am unsure why at the moment. In react, the ability to change a prop over time is saved for a concept called \'state\'',
   "state becomes it's own attribute separate to 'props'",
   "a class constructor() is needed to assign the initial `this.state`. The class should ALWAYS call this base constructor with props",
+  "'mounting' allows us to set up a timer whenever the clock is rendered to the DOM for the first time",
+  "'unmounting' allows us to clear the timer when the DOM produces by the Clock component is removed. This is to allow React to free up resources used by components when they are destroyed",
 ]
 
 function Learning(props) {
@@ -41,9 +43,7 @@ function Basic() {
       <Normal day="Thursday"/>
       <Normal day="Friday"/>
       <Normal day="Saturday"/>
-      <Learning learning={learnings[0]}/>
-      <Learning learning={learnings[1]}/>
-      <Learning learning={learnings[2]}/>
+      {learnings.map(lesson => <Learning learning={lesson}/>)}
   </div>
   );
 }
