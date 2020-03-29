@@ -5,21 +5,6 @@ const user = {
   lastName: 'The Internet',
 };
 const name = formatName(user);
-const element = (
-  <div>
-    <p>
-      How are you, {name}?
-    </p>
-    <Normal day="Sunday"/>
-    <Normal day="Monday"/>
-    <Normal day="Tuesday"/>
-    <Normal day="Wednesday"/>
-    <Normal day="Thursday"/>
-    <Normal day="Friday"/>
-    <Normal day="Saturday"/>
-  </div>
-);
-
 
 function formatName() {
   return user.firstName + ' of ' + user.lastName;
@@ -31,7 +16,18 @@ function Normal(props) {
 
 function Basic() {
   return(
-    element
+    <div>
+      <p>
+        How are you, {name}?
+      </p>
+      <Normal day="Sunday"/>
+      <Normal day="Monday"/>
+      <Normal day="Tuesday"/>
+      <Normal day="Wednesday"/>
+      <Normal day="Thursday"/>
+      <Normal day="Friday"/>
+      <Normal day="Saturday"/>
+  </div>
   );
 }
 
