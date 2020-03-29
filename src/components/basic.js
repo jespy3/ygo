@@ -22,7 +22,12 @@ const learnings = [
   "'unmounting' allows us to clear the timer when the DOM produces by the Clock component is removed. This is to allow React to free up resources used by components when they are destroyed",
   "'componentDidMount' and 'componentWillUnmount()' are called 'lifecycle methods'",
   "the setState() call will call the render() method again",
-  "only update state with setState(), never directly (eg. `this.state.comment = \"hello\";`). State is only set directly in the constructor()"
+  "only update state with setState(), never directly (eg. `this.state.comment = \"hello\";`). State is only set directly in the constructor()",
+  "since React can group many setState() calls into a single update, it is not reliable to rely on state and props to calculate the next state (they are updated asynchronously). To workaround this, let setState() accept a function instead of an object which will pass in `(state, props)`, the previous values of state and props before updating (eg. `this.setState( (state, props) => ... )`)",
+  "setState() merges to the main state object rather than overwrites it",
+  "state is independent/isolated from other components (parent or child). It is not accessible to any component other than the one that owns it",
+  "state can be passed down to child components, but data should only flow this way - down to child components",
+  "a 'stateless' component is one that doesn't have a state that can be updated. The opposite is true for 'stateful' components",
 ]
 
 function Learning(props) {
