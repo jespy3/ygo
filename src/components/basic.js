@@ -10,9 +10,15 @@ function formatName() {
   return user.firstName + ' of ' + user.lastName;
 }
 
-function Normal(props) {
-  return <p>{props.day} is a day of the week.</p>;
-}
+const daysOfTheWeek = [
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+  "Sunday",
+]
 
 const learnings = [
   'all react components must not modify their prop inputs - they should be read-only. This is just a \'rule\' and I am unsure why at the moment. In react, the ability to change a prop over time is saved for a concept called \'state\'',
@@ -30,6 +36,10 @@ const learnings = [
   "a 'stateless' component is one that doesn't have a state that can be updated. The opposite is true for 'stateful' components",
 ]
 
+function Normal(props) {
+	return <p>{props.day} is a day of the week.</p>;
+}
+
 function Learning(props) {
   return (
     <p>
@@ -44,13 +54,7 @@ function Basic() {
       <p>
         How are you, {name}?
       </p>
-      <Normal day="Sunday"/>
-      <Normal day="Monday"/>
-      <Normal day="Tuesday"/>
-      <Normal day="Wednesday"/>
-      <Normal day="Thursday"/>
-      <Normal day="Friday"/>
-      <Normal day="Saturday"/>
+      {daysOfTheWeek.map(day => <Normal day={day}/>)}
       {learnings.map(lesson => <Learning learning={lesson}/>)}
   </div>
   );
