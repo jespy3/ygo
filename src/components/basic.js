@@ -20,6 +20,8 @@ const learnings = [
   "a class constructor() is needed to assign the initial `this.state`. The class should ALWAYS call this base constructor with props",
   "'mounting' allows us to set up a timer whenever the clock is rendered to the DOM for the first time",
   "'unmounting' allows us to clear the timer when the DOM produces by the Clock component is removed. This is to allow React to free up resources used by components when they are destroyed",
+  "'componentDidMount' and 'componentWillUnmount()' are called 'lifecycle methods'",
+  "the setState() call will call the render() method again",
 ]
 
 function Learning(props) {
