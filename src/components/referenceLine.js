@@ -1,8 +1,8 @@
 import React from 'react';
 
 const courseCheckpoint="https://reactjs.org/docs/introducing-jsx.html";
-const chapterNumber = 4;
-const chapterName = "Components and Props";
+const chapterNumber = 5;
+const chapterName = "State and Lifecycle";
 
 function LinkComponent(link) {
   return (
