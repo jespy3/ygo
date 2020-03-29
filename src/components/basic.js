@@ -6,14 +6,21 @@ const user = {
 };
 const name = formatName(user);
 const element = (
-  <p>
-    How are you, {name}?
-  </p>
+  <div>
+    <p>
+      How are you, {name}?
+    </p>
+    <Normal day="Sunday"/>
+  </div>
 );
 
 
 function formatName() {
   return user.firstName + ' of ' + user.lastName;
+}
+
+function Normal(props) {
+  return <p>It is {props.day} today.</p>;
 }
 
 function Basic() {
