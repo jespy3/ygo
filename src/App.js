@@ -13,7 +13,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <Welcome />
-        <Clock date="4.26pm"/>
+        <Clock />
         <Basic />
         <ReferenceLine />
       </header>

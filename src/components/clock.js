@@ -4,7 +4,7 @@ class Clock extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      date: "4.29pm"
+      date: "4.36pm"
     }
   }
 

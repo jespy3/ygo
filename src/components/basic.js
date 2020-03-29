@@ -17,7 +17,7 @@ function Normal(props) {
 const learnings = [
   'all react components must not modify their prop inputs - they should be read-only. This is just a \'rule\' and I am unsure why at the moment. In react, the ability to change a prop over time is saved for a concept called \'state\'',
   "state becomes it's own attribute separate to 'props'",
-  "a class constructor() is needed to assign the initial `this.state`",
+  "a class constructor() is needed to assign the initial `this.state`. The class should ALWAYS call this base constructor with props",
 ]
 
 function Learning(props) {
