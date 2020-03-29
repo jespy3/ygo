@@ -1,8 +1,8 @@
 import React from 'react';
 
 const courseCheckpoint="https://reactjs.org/docs/introducing-jsx.html";
-const chapterNumber = 3;
-const chapterName = "Rendering Elements";
+const chapterNumber = 4;
+const chapterName = "Components and Props";
 
 function LinkComponent(link) {
   return (
