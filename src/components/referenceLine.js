@@ -1,8 +1,8 @@
 import React from 'react';
 
-const courseCheckpoint ="https://reactjs.org/docs/handling-events.html";
-const chapterNumber = 6;
-const chapterName = "Handling Events";
+const courseCheckpoint ="https://reactjs.org/docs/conditional-rendering.html";
+const chapterNumber = 7;
+const chapterName = "Conditional Rendering";
 
 function LinkComponent(link) {
   return (
