@@ -34,6 +34,7 @@ const learnings = [
   "state is independent/isolated from other components (parent or child). It is not accessible to any component other than the one that owns it",
   "state can be passed down to child components, but data should only flow this way - down to child components",
   "a 'stateless' component is one that doesn't have a state that can be updated. The opposite is true for 'stateful' components",
+  "JSX allows you to pass a function as the event handler (instead of a string)",
 ]
 
 function Normal(props) {
@@ -48,12 +49,26 @@ function Learning(props) {
   );
 }
 
+function ActionLink() {
+  function handleClick(e) {
+    e.preventDefault();
+    console.log('The link was clicked.')
+  }
+
+  return (
+    <button onClick={handleClick}>
+      Click me
+    </button>
+  );
+}
+
 function Basic() {
-  return(
+  return (
     <div>
       <p>
         How are you, {name}?
       </p>
+      <ActionLink />
       {daysOfTheWeek.map(day => <Normal day={day}/>)}
       {learnings.map(lesson => <Learning learning={lesson}/>)}
   </div>
