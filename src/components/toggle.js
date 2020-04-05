@@ -5,6 +5,7 @@ class Toggle extends React.Component {
     super(props);
     this.state = {
       isToggleOn: true,
+      passedArg: "Arrrrgg",
     }
 
     // This binding is needed to make 'this' work in the callback
@@ -17,11 +18,20 @@ class Toggle extends React.Component {
     }));
   }
 
+  passingAnArg(someArg) {
+    console.log(someArg)
+  }
+
   render() {
     return (
-      <button onClick={this.handleClick}>
-        {this.state.isToggleOn ? 'ON' : 'OFF'}
-      </button>
+      <div>
+        <button onClick={this.handleClick}>
+          {this.state.isToggleOn ? 'ON' : 'OFF'}
+        </button>
+        <button onClick={this.passingAnArg.bind(this, this.state.passedArg)}>
+          Pirate's say
+        </button>
+      </div>
     );
   }
 }

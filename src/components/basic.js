@@ -35,7 +35,10 @@ const learnings = [
   "state can be passed down to child components, but data should only flow this way - down to child components",
   "a 'stateless' component is one that doesn't have a state that can be updated. The opposite is true for 'stateful' components",
   "JSX allows you to pass a function as the event handler (instead of a string)",
-  "During the 'callback' of a function that uses 'this', you need to bind it - `this.handleClick = this.handleClick.bind(this);`",
+  "during the 'callback' of a function that uses 'this', you need to bind it - `this.handleClick = this.handleClick.bind(this);`",
+  "binding is important because it will show up as 'undefined' when called as an event by 'onClick'.",
+  "you have to bind a function if you don't use parantheses `()` after calling it",
+  "you have to put a `.bind` after a eventHandler function call to pass in a parameter (along with a `this`)",
 ]
 
 function Normal(props) {
