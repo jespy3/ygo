@@ -1,6 +1,6 @@
 import React from 'react';
 
-const courseCheckpoint="https://reactjs.org/docs/introducing-jsx.html";
+const courseCheckpoint ="https://reactjs.org/docs/handling-events.html";
 const chapterNumber = 6;
 const chapterName = "Handling Events";
 
