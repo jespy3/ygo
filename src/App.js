@@ -6,6 +6,7 @@ import Basic from './components/basic';
 import ReferenceLine from './components/referenceLine';
 import Welcome from './components/welcome';
 import Clock from "./components/clock";
+import Toggle from "./components/toggle";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <Welcome />
         <Clock />
+        <Toggle/>
         <Basic />
         <ReferenceLine />
       </header>
